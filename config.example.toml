@@ -1,0 +1,50 @@
+# Copy this file to config.toml and fill in your details.
+# config.toml holds personal and banking information — do not share or commit it.
+
+[carer]
+name = "Example Carer Name"
+address = "Example Address"
+email = "carer@example.com"
+phone = "0400 000 000"
+abn = "00 000 000 000"
+
+[client]
+name = "Example Client Name"
+customer_name = ""
+ndis_no = ""
+
+[bill_to]
+name = "Example Company Pty Ltd"
+email = "billing@example.com"
+
+[bank]
+name = "Example Account Name"
+bsb = "000 000"
+account = "000 000"
+
+[rates]
+hourly = 43.00          # $ per hour
+mileage_per_km = 0.80   # $ per km
+
+# Update this section for each invoice period.
+[work]
+daytime_hr = 0
+evening_hr = 0
+saturday_hr = 0
+sunday_hr = 0
+holiday_hr = 0
+sleepover_hr = 0
+mileage_trips_km = []   # one entry per trip, e.g. [8.6, 21.6, 8.6]
+
+[email]
+smtp_server = "smtp.gmail.com"
+smtp_port = 465                 # SSL port
+sender = "sender@example.com"
+password = ""                   # email password or app password
+receiver = "billing@example.com"
+subject = "Tax Invoices for Example Carer Name"
+body = """Hello,
+
+Please find the attached tax invoices for the recent service period.
+
+Regards"""

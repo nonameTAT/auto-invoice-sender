@@ -1,0 +1,8 @@
+# Personal and banking details
+config.toml
+
+# Generated invoices (contain personal details)
+invoice/
+send/
+
+__pycache__/
